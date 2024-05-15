@@ -1,0 +1,307 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #131313;
+    --bg: #010101;
+    --bg1: #00BFFF;
+    --bg4: #68cef0;
+    --bg2: #FFFFFF;
+    --bg3: #FF69B4;
+    --border: 0.3rem solid rgba(192, 9, 221, 0.3);
+    font-size: 10px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-color: var(--bg1);
+        
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--bg3);
+    border-bottom: var(--border)
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;;
+}
+
+img {
+    height: 10rem;
+   
+} 
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+    margin: 2rem;
+    cursor: pointer;
+    height: 30px;
+}
+
+.icons img:hover {
+    width: 30px;
+    height: 30px;
+}
+.btn1 {
+    background: var(--bg1);
+    color: var(--bg2);
+    padding: 1rem 3rem;
+    font-size: 1.7rem; 
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn1:hover {
+    letter-spacing: 0.1rem;
+}
+
+.btn {
+    background: var(--bg3);
+    color: var(--bg2);
+    padding: 1rem 3rem;
+    font-size: 1.7rem; 
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+   
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+
+.home-container {
+    background: url("./img/backgroud002.png");
+    height:100vh;
+    background-position:center;
+    background-size: cover;
+
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.content {
+    max-width: 60rem;
+
+}
+.content h3 {
+    color: #c80ad2;
+    font-size: 3rem;
+}
+
+.content p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.content .texto-home {
+    color: #d518d5;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 5rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.title span {
+    color: #fff;
+    text-transform: uppercase;
+   
+  
+}
+.about .row {
+    display: flex;
+    align-items: center;  
+    background-color: var(--bg3);
+    gap: 1.5rem;
+}
+.isis {
+    height: 45rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.salgados img {
+    height: 30rem;
+    padding: 2rem;
+}
+.about .row .content {
+    padding: 2rem;
+}
+
+.about .row .content {
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+    
+}
+
+.box-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+    cursor: pointer;
+    background-color: var(--bg4);
+    /* background-image: url("https://source.unsplash.com/1600x900/?confeitaria/") */
+}
+
+.menu .box-container .box img {
+    height: 20rem;
+    /* overflow: hidden; */
+}
+
+.box img:hover {
+    transform: scale(3.1);
+   
+
+}
+
+.menu .box-container .box h3 {
+    color:#fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+} 
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    /* text-decoration: line-through; */
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+    background-color: #f8bbe4;
+}
+
+.menu .box-container .box:hover>* {
+    color: var(--black);
+}
+
+.videos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.videos .video {
+    
+    padding-right:  2rem;
+}
+
+.reviw .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.reviw .box-container .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.reviw .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.reviw .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+ .footer .share img:hover {
+    background-color: var(--main-color);
+ }
+
