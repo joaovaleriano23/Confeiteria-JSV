@@ -80,6 +80,7 @@ img {
     width: 30px;
     height: 30px;
 }
+
 .btn1 {
     background: var(--bg1);
     color: var(--bg2);
@@ -156,12 +157,12 @@ img {
     justify-content: center;
 }
 
-.title span {
-    color: #fff;
+span {
     text-transform: uppercase;
-   
-  
+    color: #fff;
+     
 }
+
 .about .row {
     display: flex;
     align-items: center;  
